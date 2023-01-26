@@ -1,0 +1,34 @@
+.car-offers-empty {
+  width: 100%;
+  height: 210px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  text-align: center;
+  border: 1px solid #E1E6E9;
+  border-radius: 12px;
+  margin-bottom: 10px;
+
+  @media (max-width: 600px) {
+    height: 250px;
+  }
+
+  .car-offers-empty__icon {
+    background-image: url(/images/icon-car.svg);
+    background-color: #ffde40;
+    background-repeat: no-repeat;
+    background-position: center center;
+    border-radius: 100%;
+    width: 80px;
+    height: 80px;
+    margin-bottom: 20px;
+    flex-shrink: 0;
+  }
+
+  .car-offers-empty__title {
+    font-size: 22px;
+    margin-bottom: 20px;
+  }
+}

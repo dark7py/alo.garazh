@@ -1,0 +1,83 @@
+.car-main__car-rent-with-deposit {
+  display: flex;
+  flex-direction: column;
+  font-family: YandexSansTextMedium, sans-serif;
+  font-size: 32px;
+
+  margin-bottom: 22px;
+
+  .car-main__price-info {
+    font-size: 14px;
+    color: #6c6c6c;
+    font-family: YandexSansTextLight, sans-serif;
+  }
+
+  .car-main__car-deposit-commission {
+    display: flex;
+    margin-top: 10px;
+  }
+
+  img {
+    margin-right: 5px;
+  }
+
+  & span:nth-child(1) {
+    margin-right: 20px;
+
+    small {
+      font-family: YandexSansTextMedium, sans-serif;
+      font-size: 22px;
+      margin-top: 10px;
+      margin-left: 5px;
+    }
+  }
+
+  & span:nth-child(2) {
+    font-family: YandexSansTextRegular, sans-serif;
+    font-size: 24px;
+    line-height: 40px;
+  }
+
+  .car-main__car-deposit {
+    display: flex;
+    margin-right: 10px;
+    flex-grow: 1;
+
+    &--commission {
+      display: none;
+      @media (max-width: 650px) {
+        display: flex;
+      }
+    }
+  }
+
+  @media (max-width: 850px) {
+    font-size: 28px;
+    margin-bottom: 0;
+    flex-wrap: wrap;
+
+    & span:nth-child(1) {
+      display: block;
+    }
+
+    & span:nth-child(2) {
+      font-size: 18px;
+    }
+  }
+
+  @media (max-width: 400px) {
+    margin-bottom: 0;
+
+
+    & span:nth-child(1) {
+      small {
+        font-size: 16px;
+
+      }
+    }
+
+    & span:nth-child(2) {
+      font-size: 16px;
+    }
+  }
+}

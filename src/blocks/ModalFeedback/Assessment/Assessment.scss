@@ -1,0 +1,31 @@
+.assessment {
+  display: flex;
+  width: 320px;
+  margin: 0 auto;
+  margin-bottom: 32px;
+  justify-content: space-between;
+
+  @media (max-width: 650px) {
+    width: auto;
+  }
+}
+
+.assessment__emoji {
+  width: 48px;
+  height: 48px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  cursor: pointer;
+  border-radius: 100%;
+  background-color: #CCC;
+  border: none;
+  outline: none;
+
+  &:hover {
+    background-color: #FFDD33;
+  }
+}
+
+.assessment__emoji--active {
+  background-color: #FFDD33;
+}

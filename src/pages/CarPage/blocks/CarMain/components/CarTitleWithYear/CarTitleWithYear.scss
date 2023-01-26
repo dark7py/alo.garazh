@@ -1,0 +1,12 @@
+.car-title-with-year {
+  font-size: 28px;
+  font-family: YandexSansTextMedium, sans-serif;
+
+  & span:last-child {
+    font-family: YandexSansTextLight, sans-serif;
+  }
+
+  @media (max-width: 650px) {
+    margin-bottom: 10px;
+  }
+}

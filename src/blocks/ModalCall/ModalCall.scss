@@ -1,0 +1,75 @@
+.call-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  padding-bottom: 10px;
+  background-color: #cccccc;
+  box-shadow: 0 3px 24px 0 rgba(0, 0, 0, 0.75);
+  z-index: 200;
+}
+
+.call-modal--active {
+  background: linear-gradient(45deg, #FDB800, #EE4811, #FDB800, #EE4811);
+  background-size: 400% 400%;
+  -webkit-animation: call-modal-background-animation 6s ease infinite;
+  animation: call-modal-background-animation 6s ease infinite;
+}
+
+@keyframes call-modal-background-animation {
+  from { background-position: 0 50%; }
+  50% { background-position: 100% 50%; }
+  to { background-position: 0 50%; }
+}
+
+.call-modal__content {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px;
+  height: 100%;
+  background-color: #ffffff;
+}
+
+.call-modal__info-container {
+  display: flex;
+}
+
+.call-modal__info {
+  padding-top: 5px;
+}
+
+.call-modal__title {
+  font-size: 18px;
+  line-height: 1.36;
+
+  @media (min-width: 680px) {
+    font-size: 22px;
+  }
+}
+
+.call-modal__phone {
+  font-size: 16px;
+}
+
+.call-modal__button-container {
+  width: 280px;
+  margin: 10px auto auto;
+
+  button {
+    font-family: YandexSansTextRegular, sans-serif;
+    font-size: 18px;
+    height: 48px;
+  }
+
+  @media (min-width: 680px) {
+    margin-left: 70px;
+    width: 320px;
+  }
+
+}
+
+.call-modal__close {
+  top: 15px;
+  right: 15px;
+}

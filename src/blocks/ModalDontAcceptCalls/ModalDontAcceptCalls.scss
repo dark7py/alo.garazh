@@ -1,0 +1,17 @@
+.modal-dont-accept-calls {
+  display: flex;
+  flex-direction: column;
+
+  h4 {
+    font-size: 22px;
+    margin-bottom: 20px;
+  }
+
+  .modal-dont-accept-calls__info {
+    margin-bottom: 40px;
+  }
+
+  .modal-dont-accept-calls__work-time {
+    margin: auto;
+  }
+}

@@ -1,0 +1,99 @@
+.search-mobile {
+  position: relative;
+}
+
+.search-mobile__clear {
+  position: absolute;
+  top: 0;
+  right: 40px;
+  padding: 10px;
+  background: url('/images/icon-input-clear.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 20px;
+  height: 20px;
+  box-sizing: content-box;
+  border: none;
+  background-color: transparent;
+  outline: none;
+}
+
+.search-mobile__loupe {
+  position: absolute;
+  top: 0;
+  right: 10px;
+  padding: 10px;
+  background: url('/images/icon-loupe.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 20px;
+  height: 20px;
+  box-sizing: content-box;
+}
+
+.search-mobile-fullscreen {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 100;
+  background: white;
+}
+
+.search-mobile-fullscreen__header {
+  button {
+    width: 102px;
+    height: 44px;
+    margin-left: 16px;
+  }
+
+  margin: 16px 0;
+}
+
+.search-mobile-fullscreen__container {
+  position: relative;
+  border-bottom: 1px solid #ccc;
+}
+
+.search-mobile-fullscreen__search {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 100px;
+}
+
+.search-mobile-fullscreen_options {
+  flex-grow: 1;
+  overflow: scroll;
+}
+
+.search-mobile-fullscreen_option {
+  display: flex;
+  align-items: center;
+  height: 44px;
+  padding: 0 10px;
+  font-size: 16px;
+  width: 100%;
+  background: white;
+  border-radius: 0;
+  border: none;
+  outline: none;
+}
+
+.search-mobile-fullscreen__clear {
+  position: absolute;
+  top: 12px;
+  right: 120px;
+  background: url('/images/icon-input-clear.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 40px;
+  height: 40px;
+  box-sizing: content-box;
+  border: none;
+  background-color: transparent;
+  outline: none;
+}

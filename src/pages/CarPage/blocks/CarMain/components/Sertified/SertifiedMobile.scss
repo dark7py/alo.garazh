@@ -1,0 +1,39 @@
+.car-main {
+  .car-main__image__sertificat {
+    display: inline-block;
+    position: relative;
+    margin-left: 5px;
+    margin-top: 3px;
+    padding: 0;
+    cursor: pointer;
+    border: none;
+    background: transparent;
+  }
+
+  .car-main__image__sertificat-info__mobile {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    font-size: 14px;
+    font-family: YandexSansTextRegular, sans-serif;
+    align-items: flex-end;
+    z-index: 5;
+    transition: 0.3s;
+    color: #dce2e6;
+    background: #202020;
+
+    a {
+      color: #dce2e6;
+    }
+  }
+
+  .car-main__image__sertificat__close {
+    position: absolute;
+    right: 10px;
+    top: 16px;
+    background: none;
+    border: none;
+  }
+}

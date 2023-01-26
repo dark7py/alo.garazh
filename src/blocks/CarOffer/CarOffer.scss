@@ -1,0 +1,285 @@
+.car-offer {
+  display: flex;
+  position: relative;
+
+  min-height: 186px;
+  padding: 8px;
+  border: 1px solid rgb(220, 226, 230);
+  border-radius: 16px;
+
+  color: #242626;
+  text-decoration: none;
+
+  cursor: pointer;
+
+  &:not(last-child) {
+    margin-bottom: 10px;
+  }
+
+  &:hover {
+    box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.1);
+
+    border-color: rgb(255, 255, 255);
+  }
+
+  .car-offer__image {
+    flex: 0 0 232px;
+    position: relative;
+
+    display: flex;
+    align-items: center;
+
+    margin-right: 32px;
+
+    @media (max-width: 960px) {
+      flex: 0 0 150px;
+      height: 100px;
+      margin: auto 0;
+      margin-right: 20px;
+    }
+  }
+
+  .offer__image__sertificat {
+    &:hover {
+      .offer__image__sertificat-info {
+        display: flex;
+        opacity: 1;
+      }
+    }
+  }
+
+  .offer__image__sertificat-info {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: #f3f7f9;
+    border-radius: 8px;
+    overflow: hidden;
+    font-size: 14px;
+    font-family: YandexSansTextRegular, sans-serif;
+    align-items: flex-end;
+    padding: 10px;
+    z-index: 5;
+    opacity: 0;
+    transition: 0.3s;
+
+    a {
+      color: #202020;
+    }
+  }
+
+  .offer__image__medal {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 30px;
+    height: 40px;
+    background: url('/images/medal.svg') no-repeat center;
+    background-size: cover;
+    z-index: 10;
+  }
+}
+
+.car-offer__description {
+  display: flex;
+  flex-direction: column;
+
+  max-width: 532px;
+  margin-right: auto;
+  flex-grow: 1;
+}
+
+.car-offer__title {
+  font-family: YandexSansTextMedium, sans-serif;
+  font-size: 28px;
+}
+
+.car-offer__year {
+  font-family: YandexSansTextLight, sans-serif;
+  font-size: 28px;
+}
+
+.car-offer__property-container {
+  display: flex;
+  margin-bottom: 8px;
+  flex-wrap: wrap;
+}
+
+.car-offer__property {
+  display: inline-flex;
+  align-items: center;
+
+  font-family: YandexSansTextLight, sans-serif;
+  font-size: 14px;
+  line-height: 30px;
+
+  & img {
+    margin-right: 4px;
+  }
+
+  &:not(last-child) {
+    margin-right: 30px;
+  }
+
+  &:last-child {
+    & img {
+      margin-left: 8px;
+      margin-right: 13px;
+    }
+  }
+}
+
+.car-offer__bonuses {
+  font-family: YandexSansTextLight, sans-serif;
+  font-size: 14px;
+}
+
+.car-offer__comment-container {
+  position: relative;
+  height: 50px;
+  margin-bottom: 10px;
+  z-index: -1;
+}
+
+.car-offer__comment {
+  width: 100%;
+  position: absolute;
+  padding: 11px 8px;
+  border-radius: 8px;
+  margin-top: 11px;
+  margin-bottom: 10px;
+
+  font-family: YandexSansTextLight, sans-serif;
+  font-size: 14px;
+
+  background: RGB(248, 248, 249);
+
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.car-offer__taxi-station {
+  display: flex;
+  margin-top: auto;
+
+  font-family: YandexSansTextLight, sans-serif;
+  font-size: 14px;
+
+  span:first-child {
+    font-family: YandexSansTextMedium, sans-serif;
+    margin-right: 5px;
+  }
+
+  .car-offer__star {
+    width: 15px;
+    height: 15px;
+    margin: 0 5px;
+    margin-bottom: 3px;
+  }
+
+  .car-offer__certified {
+    width: 24px;
+    height: 24px;
+    margin-left: 5px;
+  }
+
+}
+
+.car-offer__prices {
+  flex: 0 0 200px;
+  font-family: "YandexSansTextLight", sans-serif;
+  font-size: 14px;
+  margin-right: 100px;
+  margin-left: 20px;
+  line-height: 31px;
+
+  @media (max-width: 960px) {
+    margin-right: 20px;
+  }
+
+  @media (max-width: 650px) {
+    font-family: "YandexSansTextRegular", sans-serif;
+    font-size: 16px;
+  }
+}
+
+.car-offer__prices__row {
+  display: block;
+}
+
+.car-offer__prices__item {
+  display: flex;
+  height: 30px;
+  align-items: center;
+
+  img {
+    margin-right: 5px;
+    width: 20px;
+    height: 20px;
+  }
+}
+
+.car-offer__prices__schedule {
+  margin-left: 5px;
+  color: rgb(102, 102, 102);
+  display: block;
+}
+
+
+.car-offer__prices__sum {
+  font-family: "YandexSansTextMedium", sans-serif;
+  font-size: 28px;
+  padding-right: 5px;
+}
+
+.car-offer__prices__call {
+  margin-top: 20px;
+}
+
+.car-offer__link {
+  color: #202020;
+  text-decoration: none;
+}
+
+.car-offer__clicker {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  cursor: pointer;
+}
+
+.car-offer__gallery {
+  position: relative;
+  margin: 20px -14px;
+
+  .ListingItemGallery__item {
+    height: 250px;
+  }
+
+  img {
+    object-fit: cover;
+  }
+}
+
+.car-offer__gallery--default {
+  img {
+    object-fit: contain;
+  }
+}
+
+.car-offer__gallery--desktop {
+  height: 250px;
+  margin: 20px 0;
+}
+
+.car-offer__gallery--desktop-single {
+  .Brazzers__button:after {
+    display: none;
+  }
+}

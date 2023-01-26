@@ -1,0 +1,24 @@
+.car-main__feature-element {
+  display: flex;
+  align-items: center;
+
+  margin-bottom: 17px;
+
+  font-family: YandexSansTextLight, sans-serif;
+}
+
+.car-main__feature-element_top {
+  align-items: flex-start;
+}
+
+.car-main__feature-element_light {
+  font-size: 13px;
+
+  color: #8A8E90;
+}
+
+.car-main__feature-img {
+  flex: 0 0 22px;
+  max-height: 22px;
+  margin-right: 7px;
+}

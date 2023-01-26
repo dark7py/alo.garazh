@@ -1,0 +1,21 @@
+.car-main__work-time {
+  margin-bottom: 20px;
+  font-family: YandexSansTextLight, sans-serif;
+
+  .car-main__work-time__title {
+    font-family: YandexSansTextBold, sans-serif;
+    margin-bottom: 10px;
+    text-align: left;
+  }
+
+  .car-main__work-time__list {
+    display: flex;
+
+    text-align: left;
+
+    div {
+      margin-right: 5px;
+    }
+  }
+}
+

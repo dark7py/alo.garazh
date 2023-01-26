@@ -1,0 +1,80 @@
+.desktop-filters__actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 42px;
+
+  &-toggle {
+    margin-right: 30px;
+    color: #0A5AF5;
+    position: relative;
+    padding-right: 20px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    outline: none;
+    background-color: transparent;
+
+    &:after {
+      content: '';
+      display: block;
+      height: 18px;
+      width: 18px;
+      background: url('/images/icon-arrow-bottom-blue.svg') center no-repeat;
+      position: absolute;
+      right: 0;
+      top: 2px;
+    }
+
+    &_open {
+      &:after {
+        transform: rotate(-180deg);
+      }
+    }
+  }
+
+  &-clear {
+    position: relative;
+    padding-right: 18px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    outline: none;
+    background-color: transparent;
+
+    &:before,
+    &:after {
+      content: '';
+      display: block;
+      height: 2px;
+      width: 13px;
+      background-color: #242626;
+      position: absolute;
+      top: 10px;
+      right: 0;
+    }
+
+    &:before {
+      transform: rotate(45deg);
+    }
+
+    &:after {
+      transform: rotate(-45deg);
+    }
+  }
+
+  .desktop-filters__actions-right {
+    display: flex;
+  }
+
+  .desktop-filters__actions-select {
+    width: 220px;
+
+    .ui-kit-select__label {
+      border: none;
+      font-size: 16px;
+      text-align: right;
+      padding-right: 50px;
+    }
+  }
+}

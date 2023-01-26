@@ -1,0 +1,15 @@
+.map-page__filters {
+  position: relative;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.08);
+  padding-top: 10px;
+  z-index: 5;
+
+  @media (min-width: 650px) {
+    z-index: 4;
+  }
+}
+
+.map-page__map {
+  position: relative;
+  flex-grow: 1;
+}

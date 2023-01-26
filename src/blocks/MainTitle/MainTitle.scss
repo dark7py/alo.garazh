@@ -1,0 +1,50 @@
+.main-title {
+  font-family: "YandexSansTextRegular", sans-serif;
+  font-size: 22px;
+
+  > div {
+      display: flex;
+      flex-wrap: wrap;
+      white-space: nowrap;
+      span {
+          margin-right: 10px;
+      }
+  }
+
+  h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+
+    @media (max-width: 650px) {
+      font-size: 22px;
+    }
+  }
+
+  .main-title__city-button {
+    position: relative;
+    font-size: 22px;
+    padding: 0;
+    border: none;
+    background: transparent;
+
+    text-decoration: underline;
+    text-decoration-style: dashed;
+    outline: none;
+    margin-bottom: 10px;
+    padding-right: 25px;
+
+    &:after {
+      position: absolute;
+      right: 6px;
+      top: 8px;
+      width: 12px;
+      height: 12px;
+      background-image: url(/images/icon-arrow-bottom.svg);
+      background-repeat: no-repeat;
+      background-position: center center;
+      transition: all .2s;
+      cursor: pointer;
+      content: '';
+    }
+  }
+}

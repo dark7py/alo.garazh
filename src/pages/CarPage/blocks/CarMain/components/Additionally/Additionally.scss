@@ -1,0 +1,16 @@
+.car-main__additionally {
+  @media (max-width: 650px) {
+    margin-bottom: 10px;
+  }
+}
+
+.car-main__additionally__item {
+  font-family: YandexSansTextLight, sans-serif;
+  font-size: 14px;
+
+  color: #242626;
+
+  &:before {
+    content: '— ';
+  }
+}

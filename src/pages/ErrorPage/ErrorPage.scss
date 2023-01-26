@@ -1,0 +1,62 @@
+.error-page__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+
+  padding: 40px;
+  height: 70vh;
+
+  text-align: center;
+
+  @media (max-width: 650px) {
+    font-size: 28px;
+    min-height: 60vh;
+    height: auto;
+  }
+}
+
+.error-page__title {
+  font-family: "YandexSansTextRegular", sans-serif;
+  font-size: 42px;
+
+  @media (max-width: 650px) {
+    font-size: 28px;
+  }
+}
+
+.error-page__error {
+  margin-top: 1em;
+  margin-bottom: 0;
+
+  font-size: 24px;
+
+  @media (max-width: 650px) {
+    font-size: 16px;
+  }
+}
+
+.error-page__button-container {
+  margin-top: 50px;
+  width: 400px;
+
+  a {
+    color: #202020;
+    text-decoration: none;
+  }
+
+  button {
+    height: 50px;
+    font-size: 20px;
+  }
+
+  @media (max-width: 650px) {
+    margin-top: 30px;
+    width: 100%;
+
+    button {
+      font-size: 16px;
+    }
+  }
+}

@@ -1,0 +1,18 @@
+.inner-menu {
+  padding-top: 20px;
+}
+
+.inner-menu__link {
+  display: block;
+  font-size: 13px;
+  font-weight: bold;
+  color: #202020;
+  white-space: nowrap;
+  text-decoration: none;
+  &+& {
+    margin-top: 14px;
+  }
+  &--active {
+    color: #ff0100;
+  }
+}

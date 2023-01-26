@@ -1,0 +1,32 @@
+.ui-kit-button-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  position: relative;
+  width: 100%;
+  height: 44px;
+  border: none;
+  font-size: 15px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+  outline: none;
+}
+
+.ui-kit-button-link--color {
+  background-color: #ffde40;
+
+  &:hover {
+    background-color: #ffd534;
+  }
+}
+
+.ui-kit-button-link--white {
+  background-color: #ffffff;
+  border: 1px solid #cccccc;
+
+  &:hover {
+    border-color: #808080;
+  }
+}

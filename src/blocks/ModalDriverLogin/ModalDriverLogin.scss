@@ -1,0 +1,125 @@
+.driver-login-form {
+  width: 300px;
+  margin: 30px 50px;
+
+  @media (max-width: 650px) {
+    width: 250px;
+    margin: auto;
+  }
+}
+
+.driver-login-form__title {
+  margin-bottom: 32px;
+  text-align: center;
+}
+
+.driver-login-form__input-container {
+  margin-bottom: 16px;
+}
+
+
+.driver-login-form__input {
+  width: 100%;
+  height: 46px;
+  border-radius: 5px;
+  border: solid 1px #cccccc;
+  outline: none;
+  padding: 1px 16px;
+  font-size: 18px;
+  overflow: hidden;
+  margin: 5px 0;
+
+  &:focus {
+    border-color: #ffde40;
+    border-width: 2px;
+    padding: 0 15px;
+    box-shadow: inset 0 0 0 1px transparent;
+  }
+
+  &:hover {
+    box-shadow: inset 0 0 0 1px #808080;
+
+    &:focus {
+      box-shadow: inset 0 0 0 1px transparent;
+    }
+  }
+
+  transition: 0.2s;
+}
+
+.driver-login-form__error {
+  font-size: 14px;
+  color: red;
+  margin: 10px 0;
+}
+
+.driver-login-form__taxopark {
+  margin-top: 40px;
+
+  a {
+    color: #202020;
+    text-decoration: none;
+  }
+}
+
+.driver-login-form__submit {
+  position: relative;
+  font-family: inherit;
+  display: inline-block;
+  white-space: nowrap;
+  vertical-align: middle;
+  font-size: 18px;
+  line-height: 25px;
+  border-radius: 4px;
+  box-shadow: none;
+  height: 48px;
+  width: 100%;
+  text-align: center;
+  border: 1px solid #FCCD32;
+  background-color: #FCCD32;
+  cursor: pointer;
+  padding: 0 20px;
+  outline: none;
+  transition: 0.2s;
+  overflow: hidden;
+}
+
+.driver-login-form__submit:hover {
+  opacity: 0.9;
+}
+
+.driver-login-form__submit > .loader {
+  transform: scale(0.5) translateY(-15px);
+  border-color: #ffffff transparent transparent transparent;
+  margin: 0;
+}
+
+.driver-login-form__text {
+  font-size: 14px;
+  opacity: 0.7;
+}
+
+.driver-login-form__reset {
+  font-size: 12px;
+  background: white;
+  font-weight: 700;
+  border: none;
+  outline: none;
+  padding: 0 3px;
+  cursor: pointer;
+  margin-top: 6px;
+  opacity: 0.7;
+}
+
+.driver-login-form__reset--error {
+  font-size: 12px;
+}
+
+.driver-login-form__reset:hover {
+  opacity: 0.5;
+}
+
+.driver-login-form__reset-sms {
+  margin-top: 10px;
+  font-size: 12px;
+}

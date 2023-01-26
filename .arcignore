@@ -1,0 +1,11 @@
+.idea/
+.vscode/
+.history/
+dist/
+node_modules/
+/coverage/
+kubernetes/build/
+/kubernetes/**/build/
+errors.log
+info.log
+yarn.lock

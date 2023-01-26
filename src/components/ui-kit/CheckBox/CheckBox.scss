@@ -1,0 +1,62 @@
+.ui-kit-checkbox {
+  display: flex;
+  position: relative;
+  height: 42px;
+  cursor: pointer;
+  align-items: center;
+
+  input[type=checkbox] {
+    position: absolute;
+    top: 0;
+    left: -10000px;
+    margin: 0;
+    appearance: none;
+  }
+
+  label {
+    display: block;
+    width: 100%;
+    cursor: pointer;
+    user-select: none;
+    position: relative;
+    background-size: 0;
+    box-sizing: border-box;
+    font-size: 14px;
+    line-height: 20px;
+    outline: none;
+  }
+
+  input[type=checkbox]+label::before {
+    content: "";
+    color: transparent;
+    display: inline-block;
+    background-image: inherit;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0 10px 2px 0;
+    width: 30px;
+    height: 24px;
+    text-align: center;
+    vertical-align: middle;
+    transition: 0.3s;
+    cursor: pointer;
+    box-sizing: border-box;
+  }
+
+  @media (max-width: 620px) {
+    label {
+      font-size: 14px;
+    }
+
+    height: auto;
+    padding: 5px 0;
+
+    &:hover {
+      background-color: transparent;
+    }
+
+    .checkbox__only {
+      display: none;
+    }
+  }
+}

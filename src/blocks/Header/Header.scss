@@ -1,0 +1,57 @@
+.header {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1168px;
+  margin: 0 auto;
+  height: 64px;
+}
+
+.taxiparks_buttons {
+  display: flex;
+  margin-left: 10px;
+  margin-right: auto;
+}
+
+.taxiparks_button {
+  display: block;
+  margin-left: 20px;
+  color: #202020;
+  text-decoration: none;
+
+  @media (max-width: 650px) {
+    button {
+      padding: 5px;
+    }
+  }
+}
+
+.taxiparks_button--alert {
+  :after {
+    content: '';
+
+    position: absolute;
+    top: -4px;
+    right: -4px;
+
+    display: block;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+
+    background-color: #E51818;
+  }
+}
+
+.header__container {
+  width: 100%;
+  padding: 0 20px;
+  text-align: center;
+  border-bottom: 1px solid #DCE2E5;
+  z-index: 5;
+}
+
+.header__buttons {
+  display: flex;
+}

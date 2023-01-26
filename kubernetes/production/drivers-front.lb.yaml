@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: taxi-outsource-marketplace-stable-drivers-front-lb
+  annotations:
+    yandex.cloud/load-balancer-type: internal
+    yandex.cloud/subnet-id: b0csl9f1uel7kfbmatnr
+spec:
+  ports:
+    - port: 80
+      name: drivers-front-stable
+      targetPort: 80
+  selector:
+    app: taxi-outsource-marketplace-stable-drivers-front
+  type: LoadBalancer

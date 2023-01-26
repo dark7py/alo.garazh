@@ -1,0 +1,70 @@
+.car-offer-mini {
+  display: flex;
+  position: relative;
+
+  padding: 8px;
+  border: 1px solid rgb(220, 226, 230);
+  border-radius: 16px;
+
+  color: #242626;
+  text-decoration: none;
+
+  cursor: pointer;
+
+  &:not(last-child) {
+    margin-bottom: 10px;
+  }
+
+  &:hover {
+    box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.1);
+
+    border-color: rgb(255, 255, 255);
+  }
+
+  .car-offer-mini__image {
+    width: 40%;
+
+    display: flex;
+    align-items: center;
+
+    & img {
+      width: 100%;
+      height: 100%;
+      border-radius: 8px;
+
+      object-fit: contain;
+      object-position: center;
+    }
+  }
+
+  .car-offer-mini__list {
+    width: 60%;
+    margin: 0;
+    padding: 0;
+    padding-left: 30px;
+  }
+
+  .car-offer-mini__item {
+    position: relative;
+
+    div {
+      width: 100%;
+      font-family: YandexSansTextLight, sans-serif;
+      font-size: 14px;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden;
+    }
+
+    &:after {
+      position: absolute;
+      top: 6px;
+      left: -12px;
+      width: 5px;
+      height: 5px;
+      background: #202020;
+      border-radius: 50%;
+      content: '';
+    }
+  }
+}

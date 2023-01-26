@@ -1,0 +1,89 @@
+.car-offer--vertical {
+  display: block;
+  border: 0;
+  border-radius: 0;
+  padding: 8px 0;
+  padding-bottom: 10px;
+
+  &:not(last-child) {
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+  }
+
+  &:hover {
+    box-shadow: none;
+    border-color: #ccc;
+  }
+
+  .offer__image__medal {
+    left: unset;
+    right: 10px;
+  }
+
+  .car-offer__description {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .car-offer__description-title {
+    display: none;
+  }
+
+  .car-offer__prices {
+    margin: 0 0 10px;
+    flex: auto;
+  }
+
+  .car-offer__prices__item {
+    white-space: nowrap;
+  }
+
+  .car-offer__prices--bold {
+    font-family: "YandexSansTextMedium", sans-serif;
+  }
+
+  .car-offer__prices__schedule {
+    color: #ccc;
+
+    font-size: 12px;
+  }
+
+  .car-offer__prices__sum {
+    font-size: 22px;
+  }
+
+  .car-offer__prices--bold {
+    font-size: 16px;
+  }
+
+  .car-offer__prices__row {
+    display: flex;
+    align-items: center;
+
+    .car-offer__prices__item+.car-offer__prices__item {
+      margin-left: 5px;
+    }
+  }
+
+  .car-offer__prices__call {
+    width: 100%;
+  }
+
+  .car-offer__comment {
+    margin-bottom: 0;
+  }
+
+  .car-offer__taxi-station,
+  .car-offer__bonuses {
+    margin-top: 10px;
+  }
+
+  .car-offer__schedule-cards--vertical {
+    width: 100%;
+    padding-top: 10px;
+  }
+
+  .car-offer__clicker-container {
+    position: relative;
+  }
+}

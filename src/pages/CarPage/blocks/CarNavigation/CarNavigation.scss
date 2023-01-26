@@ -1,0 +1,39 @@
+.car-navigation {
+  margin: 24px 0;
+
+  @media (max-width: 650px) {
+    margin: 8px 0;
+  }
+}
+
+.car-navigation__back-link {
+  position: relative;
+  display: inline-block;
+  padding: 11px 16px 11px 40px;
+  border: 1px solid #BABBBF;
+  border-radius: 8px;
+  background: white;
+
+  font-family: YandexSansTextRegular, sans-serif;
+  font-size: 18px;
+
+  text-decoration: none;
+
+  color: #242626;
+  cursor: pointer;
+
+  &:before {
+    position: absolute;
+    content: '';
+    left: 12px;
+    top: 14px;
+
+    display: inline-block;
+    width: 19px;
+    height: 16px;
+    margin-right: 6px;
+
+    background-image: url('/images/icon-arrow-left.svg');
+    background-repeat: no-repeat;
+  }
+}

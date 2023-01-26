@@ -1,0 +1,146 @@
+.desktop-filters {
+  position: relative;
+
+  z-index: 4;
+
+  &__park-selector {
+    margin-right: 16px;
+    width: 167px;
+  }
+
+  &__row {
+    display: flex;
+    flex-wrap: nowrap;
+    min-height: 42px;
+    transition: all .2s;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    margin-bottom: 15px;
+
+    &--hide {
+      min-height: 0;
+      height: 0;
+      overflow: hidden;
+      margin-bottom: 0;
+    }
+
+    @media only screen and (max-width: 1100px) {
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin-bottom: 0;
+
+      &--flex-start {
+        justify-content: flex-start;
+
+        div {
+          margin-right: 16px;
+        }
+      }
+
+      &--hide {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  &__item {
+    .ui-kit-input-rent {
+      width: 350px;
+    }
+
+    @media only screen and (max-width: 1100px) {
+      width: calc(50% - 8px);
+      padding-right: 10px;
+      margin-bottom: 16px;
+
+      .ui-kit-input-rent {
+        width: 100%;
+
+        input {
+          width: 100%;
+          max-width: 50%;
+        }
+      }
+
+      .ui-kit-button-group {
+        width: 100%;
+      }
+
+      .ui-kit-button-group__button {
+        width: 100%;
+
+        span {
+          width: 100%;
+        }
+      }
+
+      &--checkbox {
+        label {
+          font-size: 12px;
+        }
+
+        margin-bottom: 10px;
+
+        &:nth-child(1), &:nth-child(2) {
+          width: auto;
+        }
+
+        width: auto;
+      }
+    }
+
+    &--classes {
+      .ui-kit-multy-select {
+        width: 200px;
+      }
+
+      @media only screen and (max-width: 1100px) {
+        margin-bottom: 16px;
+
+        .ui-kit-multy-select {
+          width: 100%;
+        }
+      }
+    }
+
+    &--rent {
+      .ui-kit-multy-select {
+        max-width: 260px;
+      }
+
+      @media only screen and (max-width: 1100px) {
+        .ui-kit-multy-select {
+          max-width: 100%;
+        }
+      }
+    }
+
+    &--schedule {
+      .ui-kit-multy-select {
+        max-width: 130px;
+      }
+
+      @media only screen and (max-width: 1100px) {
+        .ui-kit-multy-select {
+          max-width: 100%;
+        }
+      }
+    }
+  }
+
+  &__item + &__item {
+    margin-left: 16px;
+
+    @media only screen and (max-width: 1100px) {
+      margin-left: 0;
+    }
+  }
+
+  &__item--checbox + &__item--checbox {
+    margin-left: 24px;
+
+    @media only screen and (max-width: 1100px) {
+      margin-left: 0;
+    }
+  }
+}

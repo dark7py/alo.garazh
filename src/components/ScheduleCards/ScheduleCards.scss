@@ -1,0 +1,76 @@
+.schedule_cards {
+  position: relative;
+
+  &:hover {
+    .schedule-arrows {
+      opacity: 1;
+    }
+  }
+
+  &:after {
+    position: absolute;
+    display: block;
+    content: '';
+    right: 0;
+    top: 0;
+    background: linear-gradient(270deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);
+    width: 20px;
+    height: 100%;
+    pointer-events: none;
+  }
+}
+
+.schedule_cards_wrapper {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  -ms-overflow-style: none;
+}
+
+.schedule_cards_wrapper::-webkit-scrollbar {
+  display: none;
+}
+
+
+
+.schedule_card__wrapper {
+  display: flex;
+  max-width: 350px;
+  padding: 5px;
+  flex-grow: 1;
+}
+
+.schedule_card {
+  display: flex;
+  flex-direction: column;
+  width: 170px;
+  height: 194px;
+  background: #FFFFFF;
+  box-shadow: 0 2px 5px rgba(117, 115, 111, 0.28);
+  border-radius: 8px;
+  flex-shrink: 0;
+  padding: 8px;
+  flex-grow: 1;
+}
+
+.schedule_card__values {
+  padding: 8px;
+  margin-bottom: auto;
+  font-family: YandexSansTextRegular, sans-serif;
+  font-size: 15px;
+  line-height: 24px;
+  color: #21201F;
+}
+
+.schedule_card__title {
+  font-family: YandexSansTextBold, sans-serif;
+}
+
+.schedule_card__price {
+  font-size: 28px;
+  line-height: 32px;
+}
+
+.schedule_card__price-container {
+  margin: 5px 0;
+}

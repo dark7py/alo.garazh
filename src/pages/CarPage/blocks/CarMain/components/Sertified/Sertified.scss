@@ -1,0 +1,52 @@
+.car-main {
+  .car-main__image__sertificat {
+    display: inline-block;
+    position: relative;
+    margin-left: 5px;
+    margin-top: 3px;
+    cursor: pointer;
+
+    &:hover {
+      .car-main__image__sertificat-info {
+        display: flex;
+        opacity: 1;
+      }
+    }
+  }
+
+  .car-main__image__sertificat-info {
+    display: none;
+    position: absolute;
+    top: 5px;
+    left: 0;
+    padding-top: 15px;
+    font-size: 14px;
+    font-family: YandexSansTextRegular, sans-serif;
+    align-items: flex-end;
+    z-index: 5;
+    opacity: 0;
+    transition: 0.3s;
+    color: #dce2e6;
+
+    @media (max-width: 650px) {
+      left: auto;
+      right: 5px;
+    }
+
+    a {
+      color: #dce2e6;
+
+      &:hover {
+        color: #ffffff;
+      }
+    }
+  }
+
+  .car-main__image__sertificat-info__container {
+    width: 230px;
+    background: rgba(0,0,0,0.9);
+    border-radius: 8px;
+    overflow: hidden;
+    padding: 10px;
+  }
+}

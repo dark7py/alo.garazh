@@ -1,0 +1,51 @@
+.call-modal-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  margin-right: 15px;
+  flex-shrink: 0;
+}
+
+.call-modal-icon__icon {
+  width: 40px;
+  height: 40px;
+  background-color: #ccc;
+  border-radius: 50%;
+  background-image: url(/images/icon-call-active.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.call-modal-icon--active {
+  background-color: #ffde40;
+}
+
+.call-modal-icon__border {
+  border-style: solid;
+  border-color: transparent;
+  border-width: 2px;
+}
+
+.call-modal-icon__border--active {
+  border-radius: 50%;
+  border-style: solid;
+  border-color: #ffde40;
+  border-width: 2px;
+  display: inline-block;
+  animation: call-modal-icon-animation 2s infinite;
+  -webkit-animation: call-modal-icon-animation 2s infinite;
+}
+
+@keyframes call-modal-icon-animation {
+  0% {
+    padding: 0;
+    border-color: #ffde40;
+  }
+
+  100% {
+    padding: 20px;
+    border-color: rgba(255, 222, 64, 0.1);
+  }
+}

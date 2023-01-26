@@ -1,0 +1,24 @@
+.car-main__specification {
+  @media (max-width: 650px) {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+}
+
+.car-main__specification__item {
+  font-family: YandexSansTextLight, sans-serif;
+
+  &:not(last-child) {
+    margin-bottom: 8px;
+  }
+}
+
+.car-main__specification-key {
+  display: inline-block;
+  width: 70px;
+  margin-right: 16px;
+
+  font-size: 14px;
+
+  color: #8A8E90;
+}

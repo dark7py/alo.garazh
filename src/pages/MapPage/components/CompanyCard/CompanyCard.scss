@@ -1,0 +1,29 @@
+.company-card {
+  .company-card__title {
+    font-size: 28px;
+    line-height: 32px;
+    color: black;
+
+    font-family: "YandexSansTextMedium", sans-serif;
+  }
+
+  .company-card__row {
+    display: flex;
+    margin: 10px 0;
+  }
+
+  .company-card__row__item {
+    display: flex;
+    align-items: center;
+
+    &:first-child {
+      img {
+        margin-left: 0;
+      }
+    }
+
+    img {
+      margin: 0 10px;
+    }
+  }
+}

@@ -1,0 +1,38 @@
+.mobile-filters__nav-link-container {
+  display: flex;
+}
+
+.mobile-filters__nav-link {
+  display: flex;
+  width: 80px;
+  height: 44px;
+
+  border: 1px solid rgba(0, 0, 0, 0.16);
+  justify-content: center;
+  align-items: center;
+
+  background: #fff;
+
+  &:first-child {
+    border-right: none;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+  }
+
+  &:last-child {
+    border-left: none;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+  }
+
+  @media (max-width: 340px) {
+    width: 70px;
+    height: 44px;
+  }
+}
+
+.mobile-filters__nav-link_active {
+  border-color: #FFDC4C;
+
+  background: #FFDC4C;
+}

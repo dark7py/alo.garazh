@@ -1,0 +1,30 @@
+{
+  "presets": [
+    [
+      "@babel/env", {
+        "modules": false,
+        "targets": {
+          "node": "current"
+        }
+    }],
+    "@babel/react"
+  ],
+  "plugins": [
+    ["module-resolver", { "root": ["./src"] }],
+    "@babel/plugin-transform-runtime",
+    "@babel/plugin-proposal-class-properties",
+    "@babel/plugin-proposal-nullish-coalescing-operator",
+    "@loadable/babel-plugin",
+    "react-hot-loader/babel"
+  ],
+  "env": {
+    "test": {
+      "presets": ["@babel/env", "@babel/react"],
+      "plugins": ["transform-export-extensions"],
+      "only": [
+        "./**/*.js",
+        "node_modules/jest-runtime"
+      ]
+    }
+  }
+}

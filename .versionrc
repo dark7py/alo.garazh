@@ -1,0 +1,5 @@
+{
+  "commitUrlFormat": "{{host}}/YTMarketplace/drivers-front/commit/{{hash}}",
+  "compareUrlFormat": "{{host}}/YTMarketplace/drivers-front/compare/{{previousTag}}...{{currentTag}}",
+  "issueUrlFormat": "{{host}}/YTMarketplace/drivers-front/issues/{{id}}"
+}

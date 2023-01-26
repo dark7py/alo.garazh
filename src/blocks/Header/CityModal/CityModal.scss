@@ -1,0 +1,39 @@
+.city-modal {
+  position: absolute;
+  font-family: YandexSansTextRegular, sans-serif;
+  width: 380px;
+  top: 50px;
+  right: 40px;
+  background: white;
+  padding: 40px;
+  box-shadow: 0 8px 24px 0 rgba(32, 32, 32, 0.1);
+  font-size: 18px;
+  z-index: 100;
+}
+
+.city-modal__small-text {
+  font-size: 13px;
+  margin-bottom: 10px;
+}
+
+.city-modal__text {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 28px;
+}
+
+.city-modal__buttons-container {
+  display: flex;
+  justify-content: space-between;
+
+  button {
+    height: 50px;
+    margin: 0 2px;
+    font-weight: 400;
+    font-size: 18px;
+  }
+}
+
+.city-modal__select-container {
+  margin-bottom: 10px;
+}

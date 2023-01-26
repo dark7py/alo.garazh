@@ -1,0 +1,75 @@
+.ListingItemGallery {
+    position: relative;
+
+    display: flex;
+    -webkit-overflow-scrolling: touch;
+    overflow-x: auto;
+    overflow-y: hidden;
+
+    scroll-snap-type: x mandatory;
+    scroll-padding-left: 12px;
+
+    &__single-image {
+        .ListingItemGallery__item_first {
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+
+    &_size_BIG &__item {
+        width: 92%;
+    }
+
+    &_size_REGULAR &__item {
+        width: 46%;
+    }
+
+    &__item {
+        flex-shrink: 0;
+
+        padding-left: 2px;
+
+        scroll-snap-align: start;
+
+        &_first {
+            margin-left: 12px;
+            padding-left: 0;
+        }
+    }
+
+    &__item_first &__itemImage {
+        border-top-left-radius: 4px;
+        border-bottom-left-radius: 4px;
+    }
+
+    &__item_last &__itemImage {
+        border-top-right-radius: 4px;
+        border-bottom-right-radius: 4px;
+    }
+
+    &__itemLink {
+        display: block;
+
+        width: 100%;
+        height: 100%;
+    }
+
+    &__itemImage {
+        width: 100%;
+        height: 100%;
+    }
+
+    &__itemVinLabel {
+        position: absolute;
+        z-index: 2;
+        bottom: 8px;
+        left: 20px;
+    }
+
+    &__spacer {
+        flex-shrink: 0;
+
+        width: 12px;
+        height: 12px;
+    }
+}

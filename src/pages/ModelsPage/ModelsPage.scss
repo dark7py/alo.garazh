@@ -1,0 +1,36 @@
+.models-page {
+  margin-bottom: 50px;
+
+  a {
+    text-decoration: none;
+  }
+
+  h1 {
+    font-family: "YandexSansTextRegular", sans-serif;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: 24px;
+  }
+
+
+  h2 {
+    margin-right: 10px;
+    font-weight: bold;
+  }
+
+  .models-page__list {
+    display: flex;
+    margin: 20px 0;
+    align-items: baseline;
+
+    div {
+      margin-right: 10px;
+    }
+
+    a {
+      color: #202020;
+      font-size: 18px;
+      text-decoration: none;
+    }
+  }
+}

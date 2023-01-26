@@ -1,0 +1,22 @@
+.modal-city-selest {
+  text-align: left;
+
+  &__title {
+    font-size: 32px;
+    line-height: 1.25;
+    margin-bottom: 20px;
+  }
+
+  &__list {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+    max-height: calc(100vh - 220px);
+    overflow-y: auto;
+  }
+
+  &__item {
+    padding: 10px 10px 10px 16px;
+    cursor: pointer;
+  }
+}

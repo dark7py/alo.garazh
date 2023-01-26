@@ -1,0 +1,28 @@
+.ui-kit-input-rent {
+  height: 42px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+
+  input[type="text"] {
+    font-size: 14px;
+    border: 1px solid #babbbf;
+    padding: 0 16px;
+    color: #202020;
+    height: 100%;
+    display: block;
+    outline: none;
+    width: 50%;
+
+    &.min {
+      border-top-left-radius: 8px;
+      border-bottom-left-radius: 8px;
+    }
+
+    &.max {
+      border-top-right-radius: 8px;
+      border-bottom-right-radius: 8px;
+      border-left: 0;
+    }
+  }
+}

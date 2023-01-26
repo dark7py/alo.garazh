@@ -1,0 +1,77 @@
+.ui-kit-button-group {
+  display: flex;
+  height: 42px;
+
+  button {
+    font-family: YandexSansTextRegular, sans-serif;
+  }
+
+  &__button {
+    border: 1px solid #cccccc;
+    line-height: 32px;
+    cursor: pointer;
+    padding: 0;
+    outline: none;
+    background: white;
+
+    @media (max-width: 650px) {
+      width: 100%;
+    }
+
+    &:first-child {
+      border-top-left-radius: 8px;
+      border-bottom-left-radius: 8px;
+    }
+
+    &:not(:first-child) {
+      border-left: none;
+    }
+
+    &:last-child {
+      border-top-right-radius: 8px;
+      border-bottom-right-radius: 8px;
+    }
+
+    &:not(:last-child) {
+      border-right: none;
+    }
+
+    span {
+      min-width: 86px;
+      padding: 0 11px;
+      display: inline-block;
+      font-size: 14px;
+      color: #242626;
+      outline: none;
+      user-select: none;
+      pointer-events: none;
+
+      @media (max-width: 650px) {
+        width: 100%;
+      }
+    }
+
+    &--gray-border {
+      span {
+        border-right: 1px solid #cccccc;
+      }
+    }
+
+    &--white-border {
+      span {
+        border-right: 1px solid white;
+      }
+    }
+
+    &--orange-border {
+      span {
+        border-right: 1px solid #ffde40;
+      }
+    }
+
+    &--selected {
+      background-color: #ffde40;
+      border-color: #ffde40;
+    }
+  }
+}

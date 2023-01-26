@@ -1,0 +1,21 @@
+.what-disappointed {
+  padding-bottom: 10px;
+  width: 320px;
+  margin: 0 auto;
+
+  @media (max-width: 650px) {
+    width: auto;
+  }
+}
+
+.what-disappointed__title {
+  text-align: left;
+  font-family: "YandexSansTextBold", sans-serif;
+  font-size: 18px;
+  padding-bottom: 10px;
+}
+
+.what-disappointed__checkboxes {
+  padding-bottom: 10px;
+  text-align: left;
+}

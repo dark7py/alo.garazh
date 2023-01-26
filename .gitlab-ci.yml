@@ -1,0 +1,27 @@
+stages:
+  - create-docker-image
+  - reload-docker-compose
+
+image: docker:stable
+
+services:
+   - docker:stable-dind
+
+create_docker_image:
+  stage: create-docker-image
+  script:
+    - docker ps --filter status=exited -q | xargs -r docker rm
+    - docker images -f dangling=true -q | xargs -r docker rmi
+    - docker build -t registry.courier99.inno.co/ytmarketplace/drivers-front .
+    - docker login -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD $CI_REGISTRY
+    - docker push registry.courier99.inno.co/ytmarketplace/drivers-front
+  only:
+    - master
+
+reload_docker_compose:
+  stage: reload-docker-compose
+  image: kroniak/ssh-client
+  script:
+    - ssh deployer@ytmp-prod.inno.co "cd /srv/ytmp-infra && docker login -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD $CI_REGISTRY && docker ps --filter status=exited -q | xargs -r docker rm && docker images -f dangling=true -q | xargs -r docker rmi && docker-compose pull driver && docker-compose down && docker-compose up --build -d"
+  only:
+    - master

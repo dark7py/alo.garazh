@@ -1,0 +1,79 @@
+.car-main-mobile__car-price {
+  display: flex;
+  font-family: YandexSansTextMedium, sans-serif;
+  font-size: 32px;
+  align-items: center;
+
+  margin-bottom: 22px;
+
+  & span:nth-child(1) {
+    margin-right: 3px;
+  }
+
+  @media (max-width: 768px) {
+    font-size: 28px;
+    margin-bottom: 0;
+
+    & span:nth-child(2) {
+      margin-top: 5px;
+    }
+
+    & span:nth-child(3) {
+      font-family: YandexSansTextLight, sans-serif;
+      font-size: 16px;
+      margin-left: 20px;
+      color: #8A8E90;
+    }
+  }
+
+  @media (max-width: 400px) {
+    margin-bottom: 0;
+
+    & span:nth-child(2) {
+      font-size: 16px;
+    }
+
+  }
+
+  @media (max-width: 330px) {
+    margin-bottom: 0;
+
+    & span:nth-child(1) {
+      font-size: 22px;
+    }
+
+    & span:nth-child(2) {
+      font-size: 16px;
+    }
+
+    & span:nth-child(3) {
+      font-size: 14px;
+    }
+  }
+}
+
+.car-main-mobile__car-deposite {
+  display: flex;
+  margin: 10px 0;
+  flex-wrap: wrap;
+
+  img {
+    margin-right: 5px;
+  }
+
+  & div {
+    display: flex;
+    font-family: YandexSansTextRegular, sans-serif;
+    font-size: 16px;
+    margin-right: 10px;
+    align-items: center;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  @media (max-width: 360px) {
+    & div {
+      font-size: 14px;
+    }
+  }
+}

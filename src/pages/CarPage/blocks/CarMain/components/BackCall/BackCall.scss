@@ -1,0 +1,28 @@
+.car-main__back-call-title {
+  display: flex;
+  align-items: center;
+
+  margin-bottom: 3px;
+
+
+  font-family: YandexSansTextLight, sans-serif;
+
+  &:before {
+    content: '';
+
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+
+    background-image: url('/images/icon-info.svg');
+  }
+}
+
+.car-main__back-call-date {
+  margin-left: 30px;
+  font-family: YandexSansTextLight, sans-serif;
+  font-size: 13px;
+
+  color: #8A8E90;
+}

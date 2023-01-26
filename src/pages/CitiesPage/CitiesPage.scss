@@ -1,0 +1,23 @@
+.cities-page {
+  margin-bottom: 50px;
+
+  h1 {
+    font-family: "YandexSansTextRegular", sans-serif;
+    margin-bottom: 20px;
+    font-size: 24px;
+  }
+
+  .cities-page__list {
+    margin: 20px 0;
+    columns: 4;
+
+    @media (max-width: 600px) {
+      columns: 1;
+    }
+
+    a {
+      color: #202020;
+      font-size: 18px;
+    }
+  }
+}
